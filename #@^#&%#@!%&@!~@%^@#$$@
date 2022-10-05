@@ -1,0 +1,11 @@
+local mt = getrawmetatable(game)
+local old = mt.__namecall
+setreadonly(mt, false)
+mt.__namecall = newcclosure(function(self, ...)
+local method = getnamecallmethod()
+if method == 'UserOwnsGamePassAsync' or method == 'PlayerHasPass' or method == 'PlayerOwnsAsset' then
+return true
+end
+return old(self, ...)
+end)
+setreadonly(mt, true)
