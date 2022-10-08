@@ -1,6 +1,7 @@
+-- auto farm uwu
 local teleport_table = {
-    location1 = Vector3.new(-8.244184494018555, -3263.0126953125, 19897.09375), -- your desired position
-    location2 = Vector3.new(12.624382019042969, 511.4999084472656, 217.11001586914062)  -- your desired position
+    location1 = Vector3.new(-17.368240356445312, -3311.2177734375, 19894.603515625), -- your desired position
+    location2 = Vector3.new(-8.244184494018555, -3263.0126953125, 19897.09375)  -- your desired position
 }
 
 local tween_s = game:GetService('TweenService')
@@ -20,5 +21,3 @@ function bypass_teleport(v)
 end
 
 bypass_teleport(teleport_table.location1)
-wait()
-game.Players.LocalPlayer.Character.Humanoid.Health=0
