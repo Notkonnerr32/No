@@ -21,3 +21,4 @@ function bypass_teleport(v)
 end
 
 bypass_teleport(teleport_table.location1)
+wait()
