@@ -20,5 +20,5 @@ function bypass_teleport(v)
 end
 
 bypass_teleport(teleport_table.location1)
-wait(6)
+wait(4)
 game.Players.LocalPlayer.Character.Humanoid.Health=0
