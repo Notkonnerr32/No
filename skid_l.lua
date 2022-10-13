@@ -48,4 +48,6 @@ wait()
         game.Lighting.ClockTime = 2
         wait()
         game.Lighting.ClockTime = 1
+        wait()
+        game.Lighting.ClockTime = -1
 end
